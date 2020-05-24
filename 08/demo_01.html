@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				margin-left: 15%;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="demo_action.html" method="post" oninput="input1.value=input2.value,output.value=parseInt(range.value),color_output.value=color.value">
+			<table border="" cellspacing="" cellpadding="">
+				<tr>
+					<th>表单元素</th>
+					<th>表单内容输入</th>
+				</tr>
+				<tr>
+					<td>文本输入：</td>
+					<td><input id="input2" type="text" name="text" id="text"></td>
+				</tr>
+				<tr>
+					<td>文本输出：</td>
+					<td>
+						<output id="input1" name="input1" for="input2 ">
+							显示上一行的输入信息
+						</output>
+					</td>
+				</tr>
+				<tr>
+					<td>多行文本输入：</td>
+					<!--其中cols和row的属性值分别表示文本区宽度和高度的字符。-->
+					<td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+				</tr>
+				<tr>
+					<td>单选钮输入</td>
+					<!--<input type="radio" name="必须有相同的名字" value="填的值最好对应">-->
+					<td>
+						<input type="radio" name="radio" value="male" checked="checked">男
+						<input type="radio" name="radio" value="famale">女
+					</td>
+				</tr>
+				<tr>
+					<td>复选框输入 </td>
+					<!--<input type="checkbox" name="相同的名字" value="不同的对应值">-->
+					<td>
+						<input type="checkbox" name="cb" value="sing">唱歌
+						<input type="checkbox" name="cb" value="dance">跳舞
+						<input type="checkbox" name="cb" value="jump">跳高
+						<input type="checkbox" name="cb" value="other">其他
+					</td>
+				</tr>
+				<tr>
+					<td>数字输入(1~100)</td>
+					 <!--输入框只能输入数字，可设置最大值，最小值。-->
+					<td><input name="number" type="number" min="1" max="100"> </td>
+				</tr>
+				<tr>
+					<td>范围输入</td>
+					<!--类似number，但它会显示一个滑动条，而不是输入框。-->
+					<td><input type="range" id="range" min="" max="" value="0">=
+						<output name="output" for="range" value="0"></output>
+					</td>
+				</tr>
+				<tr>
+					<td>颜色输入</td>
+					<!--会弹出一个颜色选择器。-->
+					<td><input id="color" type="color">=
+						<output name="color_output" for="color">#000</output>
+					</td>
+				</tr>
+				<tr>
+					
+					<td>日期输入</td>
+					 <!--会弹出一个日期选择器。-->
+					<td>
+						<input type="date">
+						<input type="week">
+						<input type="month" />
+						<input type="time">
+						<input type="datetime-local">
+					</td>
+				</tr>
+				<tr>
+					<td>email输入</td>
+					<td><input type="email"></td>
+				</tr>
+				<tr>
+					<td>tel输入</td>
+					<td><input type="tel"></td>
+				</tr>
+				<tr>
+					<td>url输入</td>
+					<td><input type="url"> </td>
+				</tr>
+				<tr>
+					<td>下拉列表</td>
+					<!--select元素和option元素结合使用可创建一个下拉菜单。-->
+					<td>
+						<select name="xllb" id="xllb">
+							<option value="web">web前端开发</option>
+							<option value="db">数据库</option>
+							<option value="bzsj" selected="selected">包装设计</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>datalist标记</td>
+					<td>
+						<input list="browsers">
+						<datalist id="browsers">
+						   <option value="Internet Explorer">
+						   <option value="Firefox">
+						   <option value="Chrome">
+						   <option value="Opera">
+						   <option value="Safari">
+						</datalist> 
+
+					</td>
+				</tr>
+				<tr>
+					<td>search属性</td>
+					<td>
+						<input type="search" name="websidesearch" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td>文件选择</td>
+					<td>
+						<input type="file" name="file" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td>提交输入:</td>
+					<td>
+						<input type="submit">
+						<input type="reset" />
+						<input type="button" value="普通提交按钮"  onclick="alert('这是一个按钮！')"/>
+						<input type="image" src="../img/HBuildx.jpg" value="图片按钮" width="134px"  height="34px"/>
+					</td>
+				</tr>
+				
+				
+			</table>
+		</form>	
+	</body>
+</html>
