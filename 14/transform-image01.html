@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS3 2D转换-扭曲、缩放</title>
+		<style type="text/css">	
+			div{width:100px;height:100px;background-image:url(img/duijiao.png);border:1px solid #00cc66;	}
+			/*缩放*/
+			#div1{transform:scale(1.5,1.5);margin:10px auto;}
+			/*扭曲：第一个值沿Y轴倾斜，第二个值沿X轴倾斜45度*/
+			#div2{transform:skew(0,-45deg);}
+			/*综合：X轴缩放，沿X轴倾斜，沿Y轴倾斜，Y轴缩放，X轴位移，Y轴位移*/
+			#div3{transform:matrix(0.8,0.5,0,0.8,20,20);
+			/* x轴、y轴缩放0.8;x轴、y轴扭曲0.5和-0.5;x轴、y轴位移20px*/}
+			td{text-align:left;vertical-align:top;}
+	</style>
+	</head>
+	<body>				
+		<h3>CSS3 2D转换-缩放、扭曲、矩阵</h3><hr>
+		<table border="1px" bordercolor="red" width="750px" height="200px">
+			<tr>
+				<td>
+					<div id="" class=""><p>这是原div</p></div>
+					<div id="div1" class=""><p>这个div缩放1.5倍</p></div>
+				</td>
+				<td>
+					<div id="" class=""><p>这是原div</p></div>
+					<div id="div2" class=""><p>这个div扭曲方法</p></div>	
+				</td>
+				<td>
+					<div id="" class=""><p>这是原div</p></div>
+					<div id="div3" class=""><p>这是div采用matrix方法</p></div>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

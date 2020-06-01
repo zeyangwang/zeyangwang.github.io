@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS3属性变化过渡</title>
+		<style type="text/css">	
+			#transition1 {
+				width: 321px;
+				height: 321px;
+				background-image: url(img/fengche.png);
+				background-repeat:no-repeat ;
+				border: 1px solid #00cc66;
+				margin: 10px;
+				
+				/*速度曲线函数:（匀速liner、逐渐变慢（默认）ease、加速ease-in、减速ease-out、
+				 *加速后减速ease-in-out、贝塞尔曲线cubic-bezier(n,n,n,n)）*/
+				/*必须设置需要过渡的属性及过渡的时间（可选的是：速度曲线函数、延时）*/
+				transition: width 4s;
+			}
+			
+			div:hover{
+				/*旋转*/
+				transform: rotate(360deg);
+			}
+		</style>
+	</head>
+	<body>				
+		<h3>CSS3 过渡</h3><hr>
+					<div id="transition1" class=""></div>
+					
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

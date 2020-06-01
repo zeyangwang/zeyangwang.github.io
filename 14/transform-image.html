@@ -1,0 +1,39 @@
+	<!doctype html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<title>CSS3 2D转换-位移与旋转</title>
+			<style type="text/css">	
+				div{width:100px;height:100px;background-image:url(img/duijiao.png);border:1px solid #00cc66;margin: 10px;	}
+				#div1{
+					transform:translate(50px,100px);
+					/*transform: translateX(50px) translateY(150px);*/
+				}
+				 /* 位移  */
+				#div2{transform:translate(50px) rotate(90deg);} 
+				  /* 旋转  */
+				#div3{transform:translate(50px) rotate(180deg);} 
+				  /* 旋转  */
+				td{text-align:left;vertical-align:top;}
+			</style>
+		</head>
+		<body>				
+			<h3>CSS3 2D转换-位移与旋转</h3><hr>
+			<table border="1px" bordercolor="red" width="750px" height="200px">
+				<tr>
+					<td>
+						<div id="" class=""><p>这是原div</p></div>
+						<div id="div1" class=""><p>这个div向右移动50px，向下移动50px</p></div>
+					</td>
+					<td>
+						<div id="" class=""><p>这是原div</p></div>
+						<div id="div2" class=""><p>这个div旋转90度</p></div>	
+					</td>
+					<td>
+						<div id="" class=""><p>这是原div</p></div>
+						<div id="div3" class=""><p>这个div旋转180度</p></div>
+					</td>
+				</tr>
+			</table>
+		</body>
+	</html>

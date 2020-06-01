@@ -1,0 +1,60 @@
+
+/*设置外层div*/
+#menu{
+	background-color: #55AAEE;
+	margin-left:10%;
+	padding-left: 40px;
+	width: 80%;
+	height:60px;
+	border: 1px solid #666;	
+}
+/*设置外边距和填充为0px*/
+#menu ul{
+	margin: 0px;
+	padding: 0px;
+}
+/*设置子菜单*/
+#submenu{
+	width: 900px;
+	height: 28px;
+	text-align: center;
+}
+/*一级菜单*/
+#menu ul li {
+	height: 30px;
+	width: 140px;
+	list-style: none;
+	float: left;
+	display: inline;
+	text-align: center;
+}
+/*超链接样式*/
+ul li a {
+	color: #fff;
+	width: 140px;
+	text-decoration: none;
+	display: block;
+	line-height: 29px;
+	border-bottom: 1px solid #FFFFFF;
+}
+/*二级菜单超链接样式*/
+ul li #submenu ul li a{
+	height: 25px;
+}
+/*一级菜单鼠标滑事件*/
+ul li a:hover{
+	background: #666666;
+	border-bottom: 1px dotted #FF0000;
+}
+/*二级菜单默认隐藏*/
+ul li #submenu{
+	display: none;
+}
+/*滑过含有二级菜单的一级菜单时，显示二级菜单*/
+ul li:hover #submenu{
+	display: block;
+}
+/*设置滑过二级菜单*/
+ul li #submenu ul li a:hover{
+	background: #333333;
+}

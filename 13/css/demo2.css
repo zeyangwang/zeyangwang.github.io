@@ -1,0 +1,27 @@
+/* layout2.css */
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+#left {
+	width: 30%;
+	height: 600px;
+	background: blue;
+	float: left;
+}
+
+#center {
+	width: 50%;
+	height: 600px;
+	background: yellow;
+	float: left;
+}
+
+#right {
+	width: 20%;
+	height: 600px;
+	background: red;
+	float: left;
+}

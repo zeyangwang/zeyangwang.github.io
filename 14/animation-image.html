@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS3动画</title>
+		<script type="text/javascript" src="html5shiv.js"></script>
+		<link rel="stylesheet" href="css/normalize.css" type="text/css">
+		<script type="text/javascript" src="js/prefixfree.min.js"></script>
+		<style type="text/css">	
+			#div1 {
+				width: 321px;
+				height: 321px;
+				background-image: url(img/fengche.png);
+				background-repeat:no-repeat ;
+				/*border: 1px solid #00cc66;*/
+				margin: 10px;
+				/*设置需要过渡的属性及过渡的时间和速度*/
+				/*参数解析：关键帧名字，动画持续时长（前两者必填），速度曲线函数，延时，动画次数，
+				 * 下一周期是否逆向播放(默认否，alternate逆向播放)，动画是否暂停(running paused)， 动画时间结束后状态*/
+				/*（none不改变默认行为，forwards动画后保持终止状态(最后一个关键帧)，
+				 * backwards动画保持第一个关键帧，both向前和向后填充模式都被应用。）等*/
+				animation: shumei 4s ease-in 1s 1 alternate backwards;
+				position: relative;
+			}
+			#div1:hover{
+				animation-play-state:paused ;
+			}
+			@keyframes shumei{
+				0%{left:0px;top:0px;}
+				50%{left: 100px;top:100px;}
+				100%{left:200px;top:200px;transform: rotate(360deg);}
+			}
+		</style>
+	</head>
+	<body>				
+		<h3>CSS3动画</h3><hr>
+					<div id="div1" class=""></div>
+					
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

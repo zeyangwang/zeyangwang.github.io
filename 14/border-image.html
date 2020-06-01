@@ -1,0 +1,29 @@
+<!-- edu_13_6_3.html -->
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS3图像边框的应用</title>
+		<script type="text/javascript" src="html5shiv.js"></script>
+		<link rel="stylesheet" href="css/normalize.css" type="text/css">
+		<script type="text/javascript" src="js/prefixfree.min.js"></script>
+		<style type="text/css">	
+			div{float:left;width:120px;height:120px;margin:30px 30px;background:#dadada;border:1em solid #00cc66;padding:5px;	}
+			/*拉伸*/
+			#div1{border-image:url(img/border.png) 27 27 stretch;}
+			/*铺满*/
+			#div2{border-image:url(img/border.png) 27 27  round;}
+			/*重复：图像可能是残缺的*/
+			#div3{border-image:url(img/border.png) 27 27  repeat;}
+		</style>
+	</head>
+	<body>				
+		<h3>CSS3图像边框的应用</h3><hr>
+		<div id="div1" class=""><p>stretch</p></div>
+		<div id="div2" class=""><p> round</p></div>	
+		<div id="div3" class=""><p>repeat</p></div>	
+		<div id="div4" class="">
+		<p>这是原图<img src="border.png" border="0" alt=""></p>
+		</div>
+	</body>
+</html>

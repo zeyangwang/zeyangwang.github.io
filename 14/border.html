@@ -1,0 +1,41 @@
+<!-- edu_13_6_1.html -->
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS3边框的应用</title>
+		<script type="text/javascript" src="html5shiv.js"></script>
+		<link rel="stylesheet" href="css/normalize.css" type="text/css">
+		<script type="text/javascript" src="js/prefixfree.min.js"></script>
+		<style type="text/css">	
+			div{float:left;width:120px;height:120px;margin:50px 80px;background:#009999;border:6px solid #00cc66;padding:10px;	}
+			/*border-radius:一个参数（矩形四角圆弧半径同一值）*/
+			#div1{
+				/*圆角边框：border-radius:一个参数（矩形四角圆弧半径同一值）*/	
+				/*border-radius:50px;*/
+				/*边框阴影：横竖湖影大小分，五颜六色内外见*/
+				box-shadow: 15px 5px 20px 20px #666666,-15px -5px 20px 20px yellow; 
+				/*box-shadow: 5px 5px 50px 20px #FFFF00 inset; */
+			}
+			/*border-radius:两个参数（左对角，右对角圆弧半径各同一值）*/
+			#div2{	
+				border-radius:50px 25px;
+				border-image:url(../img/border.png) 27 27 round; 
+			}
+			/*border-radius:四个参数（左上，右上，右下，左下圆弧半径）*/
+			#div3{	border-radius:20px 40px 80px 160px;}
+			/*border-radius:水平半径（1-4个参数）/竖直半径（1-4个参数）（左上，右上，右下，左下圆弧水平、竖直半径各不相同：）*/
+			#div4{	
+				border-radius:80px 100px 60px 120px/50px 60px 70px 70px;
+			}
+		</style>
+	</head>
+	<body>				
+		<h3>CSS3边框的应用</h3><hr>
+		<div id="div1" class=""><p>半径均相同</p></div>
+		<div id="div2" class=""><p>左、右对角的半径相同</p></div>
+		<div id="div3" class=""><p>左上，右上，右下，左下圆弧半径</p></div>
+		<div id="div4" class=""><p>每个角水平与垂直半径不同</p>
+		</div>	
+	</body>
+</html>
