@@ -1,41 +1,41 @@
 body{
-				text-align: center;
-			}
-			
-			table{
-				width: 1024px;
-				height: 50px;
-				background-color: blue;
-				margin-left:15% ;
-			}
-			a{
-				color: white;
-			}
-			a:hover,a:active{
-				background-color: white;
-				color: blue;
-				border-bottom: 2px solid red;
-			}
-			.div_1{
-				margin-left: 15%;
-				margin-top: 20px;
-			}
-			.div_2{
-				float: left;
-				height: 400px;
-				width: 20%;
-				background-color: red;
-				
-			}
-			.div_3{
-				float: left;
-				height: 400px;
-				width: 36%;
-				background-color: yellow;
-			}
-			.div_4{
-				float: left;
-				height: 400px;
-				width: 20%;
-				background-color: red;
-			}
+	text-align: center;
+}
+
+table{
+	width: 1024px;
+	height: 50px;
+	background-color: blue;
+	margin-left:15% ;
+}
+a{
+	color: white;
+}
+a:hover,a:active{
+	background-color: white;
+	color: blue;
+	border-bottom: 2px solid red;
+}
+.div_1{
+	margin-left: 15%;
+	margin-top: 20px;
+}
+.div_2{
+	float: left;
+	height: 400px;
+	width: 20%;
+	background-color: red;
+	
+}
+.div_3{
+	float: left;
+	height: 400px;
+	width: 36%;
+	background-color: yellow;
+}
+.div_4{
+	float: left;
+	height: 400px;
+	width: 20%;
+	background-color: red;
+}
