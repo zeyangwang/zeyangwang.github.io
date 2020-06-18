@@ -1,5 +1,10 @@
+		#nav{
+			margin: 0 auto;
+		    text-align: center;
+		    width: 70%;
+		}
 		p{
-			margin-left: 20%;
+			text-align-last:center;
 			font-family: 楷体;
 			font-size: 50px;
 			animation: shanshuo 3s 100;
@@ -59,3 +64,4 @@
   		ul li:hover ul{
   			visibility:visible;
   		}
+  	

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>浮动框架中打开新页面</title>
+		<style type="text/css">
+			.iframe1,.iframe2{
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>浮动框架中打开新页面</h3>
+		<div class="div_iframe" style="width: 1024px;">
+			<div class="iframe1">
+				<iframe src="http://www.pku.edu.cn" name="left" width="50%"></iframe>
+				<p>
+					<a href="http://www.baidu.com" target="left">在左边浮动框架中打开百度</a>
+				</p>
+			</div>
+			<div class="iframe2">
+				<iframe src="http://www.ycu.com.cn" name="right" width="50%"></iframe>
+				<p>
+					<a href="https://www.qq.com" target="right">在右边浮动框架中打开腾讯</a>
+				</p>
+				
+			</div>
+			
+		</div>
+	</body>
+</html>
